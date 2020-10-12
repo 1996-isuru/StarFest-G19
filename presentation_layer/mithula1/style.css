@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background: #2F4F4F;
+}
+::selection{
+  color: #fff;
+  background: #d43f8d;
+}
+.container{
+  width: 600px;
+  background: #DDA0DD;
+  text-align: center;
+  border-radius: 5px;
+  padding: 50px 35px 10px 35px;
+}
+.container header{
+  font-size: 35px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+}
+.container .form-outer{
+  width: 100%;
+  overflow: hidden;
+}
+.container .form-outer form{
+  display: flex;
+  width: 400%;
+}
+.form-outer form .page{
+  width: 25%;
+  transition: margin-left 0.3s ease-in-out;
+}
+.form-outer form .page .title{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+.form-outer form .page .field{
+  width: 330px;
+  height: 45px;
+  margin: 45px 0;
+  display: flex;
+}
+form .page  .label{
+  text-align: left;
+  top: -30px;
+  font-weight: 500;
+}
+.label1{
+  text-align: left;
+  background: lightgreen;
+  
+}
+
+.page .field select{
+  width: 100%;
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: 500;
+}
+form .page .field button{
+ width: 100%;
+  height: calc(100% + 5px);
+  border: none;
+  margin-top: -60px;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 10px;
+  transition: 0.5s ease;
+  background-color: chartreuse;
+}
+form .page .field  .button1 {background-color: #106d74; margin-left:auto;} 
+form .page .field  .button2 {background-color: #06ba00; vertical-align: right;}
+form .page .field  .button3 {background-color: #ba0000; box-align: right;}
+form .page .field button:hover{
+  background: #000;
+}
+form .page .btns button{
+  margin-top: -10px!important;
+}
+form .page .btns button.prev{
+  margin-right: 3px;
+  font-size: 17px;
+}
+form .page .btns button.next{
+  margin-left: 100px;
+  background-color: #06ba00;
+}
+form .page .btns button.next{
+  margin-left: 3px;
+}
+.container .progress-bar{
+  display: flex;
+  margin: 40px 0;
+  user-select: none;
+}
+
+ .bullet{
+  height: 45px;
+  width: 45px;
+  border: 1px solid #000;
+  background-color: rgb(190, 119, 119);
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 45px;
+}
+.bullet1{
+  background-color: red;
+}
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 225px;
+  margin: 0 2px;
+  border: none;
+  border-radius: 5%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: red;
+}
